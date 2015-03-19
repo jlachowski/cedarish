@@ -26,6 +26,7 @@ apt-get install -y --force-yes \
     imagemagick \
     iputils-tracepath \
     language-pack-en \
+    language-pack-pl \
     libbz2-dev \
     libcurl4-openssl-dev \
     libevent-dev \
@@ -69,6 +70,8 @@ apt-cache search language-pack \
     | grep -v '^language\-pack\-\(gnome\|kde\)\-' \
     | grep -v '\-base$' \
     | xargs apt-get install -y --force-yes --no-install-recommends
+DEBIAN_FRONTEND=noninteractive locale-gen --no-purge pl_PL.UTF-8
+DEBIAN_FRONTEND=noninteractive dpkg-reconfigure locales
 
 cd /
 rm -rf /var/cache/apt/archives/*.deb
