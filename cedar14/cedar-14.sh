@@ -29,11 +29,14 @@ apt-get install -y --force-yes \
     libbz2-dev \
     libcurl4-openssl-dev \
     libevent-dev \
+    libffi-dev \
     libglib2.0-dev \
     libjpeg-dev \
     libmagickwand-dev \
+    libmcrypt-dev \
     libmysqlclient-dev \
     libncurses5-dev \
+    libpng12-dev \
     libpq-dev \
     libpq5 \
     libreadline6-dev \
@@ -51,6 +54,8 @@ apt-get install -y --force-yes \
     ruby \
     ruby-dev \
     socat \
+    sqlite3 \
+    supervisor \
     syslinux \
     tar \
     telnet \
