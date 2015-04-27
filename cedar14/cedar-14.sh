@@ -50,6 +50,7 @@ apt-get install -y --force-yes \
     openssh-client \
     openssh-server \
     postgresql-server-dev-9.3 \
+    postgresql-client-9.3 \
     python \
     python-dev \
     ruby \
